@@ -13,6 +13,12 @@ h1 {
     color: steelblue;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     max-width: 840px;
 }
@@ -23,6 +29,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -30,24 +37,42 @@ p {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 300px;
+    margin: 10px 0;
     border: 1px solid rgb(0 0 0 / 0.2);
     /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    display: block;
+}
 
+aside h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* class selectors*/
+.box {
+    border: 1px solid #b71234;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #cccaca;
+    color: #1a044e;
+
 }
