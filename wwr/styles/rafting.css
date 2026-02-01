@@ -77,3 +77,68 @@ article {
     width: 125px;
     margin-left: 10px;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    /* push links to the right */
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    /* logo + nav */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004466;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* text + image */
+    gap: 20px;
+    padding: 40px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.adventures figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px 20px;
+    background-color: #004466;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
