@@ -1,16 +1,25 @@
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 nav a {
-    color: white;
+    color: #fff;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+
 }
 
 h1 {
     color: steelblue;
+    border-bottom: 1px solid;
 }
 
 * {
@@ -19,8 +28,22 @@ h1 {
     padding: 0;
 }
 
+a {
+    color: red green blue (3, 3, 109);
+}
+
+header,
+.grid,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 main {
-    max-width: 840px;
+    max-width: 640px;
+    grid-column: 2/3;
+    margin: 1rem 0;
+
 }
 
 main img {
@@ -30,6 +53,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 1rem 0 1rem 1rem;
 }
 
 p {
@@ -37,14 +61,15 @@ p {
 }
 
 aside {
-    width: 300px;
-    margin: 10px 0;
+    max-width: 30rem;
+
     border: 1px solid rgb(0 0 0 / 0.2);
     /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
-
+    grid-column: 1/2;
+    grid-row: 1/2;
     position: relative;
 }
 
@@ -62,17 +87,35 @@ aside h2 {
 }
 
 footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
 }
 
 /* class selectors*/
 .box {
     border: 1px solid #b71234;
     padding: 1rem;
-    margin: 1rem;
+
     background-color: #cccaca;
     color: #1a044e;
 
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
