@@ -143,3 +143,38 @@ footer img {
     width: 30px;
     height: 30px;
 }
+
+.contact-info,
+.contact-form,
+.employees {
+    margin: 2rem 0;
+}
+
+.employees {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.submit-btn {
+    background-color: #005f73;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #0a9396;
+}
